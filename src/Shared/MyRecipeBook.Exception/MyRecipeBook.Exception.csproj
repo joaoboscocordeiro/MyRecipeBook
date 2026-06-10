@@ -10,4 +10,19 @@
     <PackageReference Include="FluentValidation" Version="12.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="ResourceMesageException.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourceMesageException.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ResourceMesageException.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceMesageException.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>
