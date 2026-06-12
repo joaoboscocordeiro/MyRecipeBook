@@ -61,7 +61,16 @@ namespace MyRecipeBook.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Oops! Este e-mail é inválido..
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Unknown error!.
+        /// </summary>
+        public static string UNKNOWN_ERROR {
+            get {
+                return ResourceManager.GetString("UNKNOWN_ERROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Oops! This email address is invalid..
         /// </summary>
         public static string VALIDATE_EMAIL_INVALID {
             get {
