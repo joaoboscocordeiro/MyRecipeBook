@@ -61,6 +61,15 @@ namespace MyRecipeBook.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Oops! Este e-mail é inválido..
+        /// </summary>
+        public static string VALIDATE_EMAIL_INVALID {
+            get {
+                return ResourceManager.GetString("VALIDATE_EMAIL_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Oops! Email is required.
         /// </summary>
         public static string VALIDATE_EMAIL_REQUIRED {
@@ -75,6 +84,15 @@ namespace MyRecipeBook.Exception {
         public static string VALIDATE_NAME_REQUIRED {
             get {
                 return ResourceManager.GetString("VALIDATE_NAME_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Oops! Password is required..
+        /// </summary>
+        public static string VALIDATE_PASSWORD_REQUIRED {
+            get {
+                return ResourceManager.GetString("VALIDATE_PASSWORD_REQUIRED", resourceCulture);
             }
         }
     }

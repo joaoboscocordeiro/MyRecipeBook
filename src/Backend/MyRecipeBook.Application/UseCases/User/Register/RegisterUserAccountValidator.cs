@@ -9,11 +9,11 @@ public class RegisterUserAccountValidator : AbstractValidator<RequestRegisterUse
     public RegisterUserAccountValidator()
     {
         RuleFor(user => user.Name).NotEmpty().WithMessage(ResourceMesageException.VALIDATE_NAME_REQUIRED);
-        RuleFor(user => user.Email).NotEmpty().WithMessage("O email não pode ser vazio!");
-        RuleFor(user => user.Password).NotEmpty().WithMessage("A senha não pode ser vazia!");
+        RuleFor(user => user.Email).NotEmpty().WithMessage(ResourceMesageException.VALIDATE_EMAIL_REQUIRED);
+        RuleFor(user => user.Password).NotEmpty().WithMessage(ResourceMesageException.VALIDATE_PASSWORD_REQUIRED);
         When(user => string.IsNullOrWhiteSpace(user.Email) == false, () =>
         {
-            RuleFor(user => user.Email).EmailAddress().WithMessage("O email deve ser válido!");
+            RuleFor(user => user.Email).EmailAddress().WithMessage(ResourceMesageException.VALIDATE_EMAIL_INVALID);
         });
     }
 }
