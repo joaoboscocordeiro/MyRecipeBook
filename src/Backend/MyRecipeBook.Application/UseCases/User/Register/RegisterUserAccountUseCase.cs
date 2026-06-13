@@ -1,13 +1,14 @@
-﻿using MyRecipeBook.Communication.Requests;
+using MyRecipeBook.Communication.Requests;
+using MyRecipeBook.Communication.Responses;
 using MyRecipeBook.Exception.ExceptionsBase;
 
 namespace MyRecipeBook.Application.UseCases.User.Register;
 
 public class RegisterUserAccountUseCase
 {
-    public void Execute(RequestRegisterUserAccountJson request)
+    public ResponseRegisteredUserJson Execute(RequestRegisterUserAccountJson request)
     {
-        var validator =  new RegisterUserAccountValidator();
+        var validator = new RegisterUserAccountValidator();
 
         var result = validator.Validate(request);
 
@@ -17,5 +18,10 @@ public class RegisterUserAccountUseCase
 
             throw new ErrorOnValidationException(errorMessages);
         }
+
+        return new ResponseRegisteredUserJson
+        {
+            Name = request.Name
+        };
     }
 }
