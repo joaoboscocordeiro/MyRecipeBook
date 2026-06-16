@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "skills": {
+    "tlc-spec-driven": {
+      "name": "tlc-spec-driven",
+      "source": "local",
+      "contentHash": "69867b0e19be1fb556d2e697f0f18f1de0363d1aa2de9d36754d5b107156357c",
+      "installedAt": "2026-06-13T18:11:24.279Z",
+      "updatedAt": "2026-06-13T18:11:24.349Z",
+      "agents": [
+        "cursor",
+        "claude-code",
+        "windsurf"
+      ],
+      "method": "copy",
+      "global": false
+    },
+    "aws-advisor": {
+      "name": "aws-advisor",
+      "source": "local",
+      "contentHash": "959d64baef88617c3cd3273250de4eef5e0954d627a2c01708b23fd0f6e0f050",
+      "installedAt": "2026-06-13T18:15:16.682Z",
+      "updatedAt": "2026-06-13T18:15:16.772Z",
+      "agents": [
+        "cursor",
+        "claude-code",
+        "windsurf"
+      ],
+      "method": "copy",
+      "global": false
+    },
+    "coding-guidelines": {
+      "name": "coding-guidelines",
+      "source": "local",
+      "contentHash": "28a414c715d3c41aae28a25e2f109813ec3f246f76b5567c1e7d6a128cd289ff",
+      "installedAt": "2026-06-13T18:15:16.692Z",
+      "updatedAt": "2026-06-13T18:15:16.780Z",
+      "agents": [
+        "cursor",
+        "claude-code",
+        "windsurf"
+      ],
+      "method": "copy",
+      "global": false
+    },
+    "docs-writer": {
+      "name": "docs-writer",
+      "source": "local",
+      "contentHash": "c49827c59d2e27d313731dfd36314cfde0e8dbf15be0e8f813d2f8b751546b0c",
+      "installedAt": "2026-06-13T18:15:16.704Z",
+      "updatedAt": "2026-06-13T18:15:16.749Z",
+      "agents": [
+        "cursor",
+        "claude-code"
+      ],
+      "method": "copy",
+      "global": false
+    }
+  }
+}

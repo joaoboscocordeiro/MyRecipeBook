@@ -1,12 +1,20 @@
+using Mapster;
 using MyRecipeBook.Communication.Requests;
-using MyRecipeBook.Communication.Responses;
 using MyRecipeBook.Exception.ExceptionsBase;
 
 namespace MyRecipeBook.Application.UseCases.User.Register;
 
 public class RegisterUserAccountUseCase
 {
-    public ResponseRegisteredUserJson Execute(RequestRegisterUserAccountJson request)
+    public void Execute(RequestRegisterUserAccountJson request)
+    {
+        ValidateAndThrowOnFailures(request);
+
+        var user = request.Adapt<Domain.Entities.User>();
+
+    }
+
+    private void ValidateAndThrowOnFailures(RequestRegisterUserAccountJson request)
     {
         var validator = new RegisterUserAccountValidator();
 
@@ -18,10 +26,5 @@ public class RegisterUserAccountUseCase
 
             throw new ErrorOnValidationException(errorMessages);
         }
-
-        return new ResponseRegisteredUserJson
-        {
-            Name = request.Name
-        };
     }
 }
