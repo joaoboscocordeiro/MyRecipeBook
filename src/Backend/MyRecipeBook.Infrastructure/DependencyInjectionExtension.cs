@@ -6,8 +6,11 @@ namespace MyRecipeBook.Infrastructure;
 
 public static class DependencyInjectionExtension
 {
-    public static void AddInfrastructure(this IServiceCollection services)
+    extension(IServiceCollection services)
     {
-        services.AddScoped<IPasswordHasher, Argon2PasswordHasher>();
+        public void AddInfrastructure()
+        {
+            services.AddScoped<IPasswordHasher, Argon2PasswordHasher>();
+        }
     }
 }
