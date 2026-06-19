@@ -22,14 +22,14 @@ namespace MyRecipeBook.Exception {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ResourceMesageException {
+    public class ResourseMessagesException {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ResourceMesageException() {
+        internal ResourseMessagesException() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MyRecipeBook.Exception {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MyRecipeBook.Exception.ResourceMesageException", typeof(ResourceMesageException).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MyRecipeBook.Exception.ResourseMessagesException", typeof(ResourseMessagesException).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -66,6 +66,15 @@ namespace MyRecipeBook.Exception {
         public static string UNKNOWN_ERROR {
             get {
                 return ResourceManager.GetString("UNKNOWN_ERROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Oops! This email address is invalid..
+        /// </summary>
+        public static string VALIDATE_EMAIL_ALREADY_EXISTS {
+            get {
+                return ResourceManager.GetString("VALIDATE_EMAIL_ALREADY_EXISTS", resourceCulture);
             }
         }
         

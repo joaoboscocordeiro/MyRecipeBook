@@ -11,17 +11,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="ResourceMesageException.Designer.cs">
+    <Compile Update="ResourseMessagesException.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>ResourceMesageException.resx</DependentUpon>
+      <DependentUpon>ResourseMessagesException.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="ResourceMesageException.resx">
+    <EmbeddedResource Update="ResourseMessagesException.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResourceMesageException.Designer.cs</LastGenOutput>
+      <LastGenOutput>ResourseMessagesException.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 
