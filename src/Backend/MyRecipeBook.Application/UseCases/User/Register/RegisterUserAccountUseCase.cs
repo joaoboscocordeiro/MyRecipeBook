@@ -56,7 +56,7 @@ public class RegisterUserAccountUseCase : IRegisterUserAccountUseCase
         var emailExist = await _userReadOnlyRepository.ExistActiveUserWithEmail(request.Email);
         if (emailExist)
         {
-            result.Errors.Add(new ValidationFailure(string.Empty, ResourseMessagesException.VALIDATE_EMAIL_ALREADY_EXISTS));
+            result.Errors.Add(new ValidationFailure(string.Empty, ResourseMesageException.VALIDATE_EMAIL_ALREADY_EXISTS));
         }
 
         if (result.IsValid == false)
@@ -66,4 +66,4 @@ public class RegisterUserAccountUseCase : IRegisterUserAccountUseCase
             throw new ErrorOnValidationException(errorMessages);
         }
     }
-}}
+}

@@ -121,7 +121,7 @@
     <value>Error desconocido!</value>
   </data>
   <data name="VALIDATE_EMAIL_ALREADY_EXISTS" xml:space="preserve">
-    <value>Ups! Esta dirección de correo electrónico no es válida.</value>
+    <value>Ups! Esta dirección de correo electrónico ya está en uso.</value>
   </data>
   <data name="VALIDATE_EMAIL_INVALID" xml:space="preserve">
     <value>Ups! Esta dirección de correo electrónico no es válida.</value>

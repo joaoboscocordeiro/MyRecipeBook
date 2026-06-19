@@ -118,21 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="UNKNOWN_ERROR" xml:space="preserve">
-    <value>Unknown error!</value>
+    <value>Erro desconhecido!</value>
   </data>
   <data name="VALIDATE_EMAIL_ALREADY_EXISTS" xml:space="preserve">
-    <value>Oops! This email address is invalid.</value>
+    <value>Ops! Este e-mail já está em uso.</value>
   </data>
   <data name="VALIDATE_EMAIL_INVALID" xml:space="preserve">
-    <value>Oops! This email address is invalid.</value>
+    <value>Ops! Este e-mail é inválido.</value>
   </data>
   <data name="VALIDATE_EMAIL_REQUIRED" xml:space="preserve">
-    <value>Oops! Email is required</value>
+    <value>Ops! O e-mail é obrigatório.</value>
   </data>
   <data name="VALIDATE_NAME_REQUIRED" xml:space="preserve">
-    <value>Oops! Name is required.</value>
+    <value>Ops! O nome é obrigatório.</value>
   </data>
   <data name="VALIDATE_PASSWORD_REQUIRED" xml:space="preserve">
-    <value>Oops! Password is required.</value>
+    <value>Ops! É necessário usar uma senha.</value>
   </data>
 </root>
